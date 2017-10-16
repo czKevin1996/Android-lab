@@ -128,6 +128,8 @@ public class MainActivity extends AppCompatActivity {
                             .show();
                 }
                 else {  //输入错误的密码，弹出snackbar消息
+                    number1.setErrorEnabled(false);
+                    password1.setErrorEnabled(false);
                     Snackbar.make(mRadioGroup,"学号或密码错误", Snackbar.LENGTH_SHORT)
                             .setAction("确定", new View.OnClickListener() {
                                 @Override
