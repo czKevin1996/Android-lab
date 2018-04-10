@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/widget"
+    android:padding="@dimen/widget_margin">
+
+    <ImageView
+        android:src="@mipmap/shoplist"
+        android:id="@+id/appwidget_image"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="the picture in widget"/>
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/appwidget_text"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:contentDescription="the text in widget"
+        android:text="@string/appwidget_text"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+</LinearLayout>
